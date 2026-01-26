@@ -1,87 +1,129 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Services - Orbit Digital Agency',
-  description: 'Explore our comprehensive digital services and find the perfect solution for your business.',
-};
-
+// app/services/page.tsx 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-slate-900 mb-4">Our Services</h1>
-          <p className="text-xl text-slate-600">
-            Comprehensive digital solutions tailored to your business needs.
+    <>
+      {/* HERO SECTION */}
+      <section className="hero hero-services">
+        <div className="container">
+          <h1 className="hero-title">Our Services</h1>
+          <p className="hero-subtitle">
+            Comprehensive digital solutions tailored for your business growth.
           </p>
         </div>
+      </section>
 
-        {/* Services Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="prose max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Web Development</h2>
-            <p className="text-slate-600 mb-4">
-              We build custom web applications using modern technologies like Next.js, React, and Node.js. Our team specializes in creating high-performance, scalable applications that drive business growth.
-            </p>
-            <ul className="space-y-2 text-slate-600">
-              <li>• Full-stack development</li>
-              <li>• API design and implementation</li>
-              <li>• Database architecture</li>
-              <li>• Performance optimization</li>
-            </ul>
-          </div>
-
-          <div className="prose max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">UI/UX Design</h2>
-            <p className="text-slate-600 mb-4">
-              Our design team creates beautiful, intuitive interfaces that users love. We focus on user-centered design principles to ensure your application is both functional and delightful.
-            </p>
-            <ul className="space-y-2 text-slate-600">
-              <li>• User research and testing</li>
-              <li>• Wireframing and prototyping</li>
-              <li>• Visual design systems</li>
-              <li>• Responsive design</li>
-            </ul>
-          </div>
-
-          <div className="prose max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Digital Strategy</h2>
-            <p className="text-slate-600 mb-4">
-              We work with you to develop a comprehensive digital strategy that aligns with your business goals and market opportunities.
-            </p>
-            <ul className="space-y-2 text-slate-600">
-              <li>• Market analysis</li>
-              <li>• Digital transformation</li>
-              <li>• Technology planning</li>
-              <li>• ROI optimization</li>
-            </ul>
-          </div>
-
-          <div className="prose max-w-none">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Web Performance</h2>
-            <p className="text-slate-600 mb-4">
-              Speed and reliability matter. We optimize your web presence for performance, security, and user experience.
-            </p>
-            <ul className="space-y-2 text-slate-600">
-              <li>• Speed optimization</li>
-              <li>• Security hardening</li>
-              <li>• Infrastructure setup</li>
-              <li>• Monitoring and analytics</li>
-            </ul>
+      {/* WEB DEVELOPMENT */}
+      <section className="section service-detail">
+        <div className="container">
+          <div className="services-grid">
+            <div className="service-content">
+              <h2 className="title">Web Development</h2>
+              <p className="subtitle">
+                We build fast, modern websites and web applications using the latest 
+                technologies like Next.js, React, and TypeScript. From landing pages 
+                to complex SaaS platforms, we deliver scalable solutions.
+              </p>
+              <div className="service-features">
+                <div className="feature">
+                  <div className="feature-icon code">01</div>
+                  <span>Next.js 15 & React 19</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon performance">02</div>
+                  <span>Performance Optimized</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon responsive">03</div>
+                  <span>Fully Responsive</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon seo">04</div>
+                  <span>SEO Ready</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* CTA Section */}
-        <div className="mt-20 text-center">
-          <h2 className="text-3xl font-bold text-slate-900 mb-6">Ready to get started?</h2>
-          <a
-            href="#contact"
-            className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Schedule a Consultation
-          </a>
+      {/* UI/UX DESIGN */}
+      <section className="section service-detail alternate">
+        <div className="container">
+          <div className="services-grid">
+            <div className="service-content">
+              <h2 className="title">UI/UX Design</h2>
+              <p className="subtitle">
+                We create intuitive, beautiful interfaces that users love. Our design 
+                process includes research, wireframing, prototyping, and testing to 
+                ensure your product delights users and converts visitors.
+              </p>
+              <div className="service-features">
+                <div className="feature">
+                  <div className="feature-icon research">01</div>
+                  <span>User Research</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon figma">02</div>
+                  <span>Figma Prototypes</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon design-system">03</div>
+                  <span>Design Systems</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon testing">04</div>
+                  <span>Usability Testing</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      {/* DIGITAL MARKETING */}
+      <section className="section service-detail">
+        <div className="container">
+          <div className="services-grid">
+            <div className="service-content">
+              <h2 className="title">Digital Marketing</h2>
+              <p className="subtitle">
+                Drive traffic and conversions with data-driven marketing strategies. 
+                From SEO optimization to social media campaigns and PPC management, 
+                we help businesses grow their online presence effectively.
+              </p>
+              <div className="service-features">
+                <div className="feature">
+                  <div className="feature-icon seo">01</div>
+                  <span>SEO Optimization</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon social">02</div>
+                  <span>Social Media</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon ads">03</div>
+                  <span>Google Ads</span>
+                </div>
+                <div className="feature">
+                  <div className="feature-icon analytics">04</div>
+                  <span>Analytics Tracking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section cta-section">
+        <div className="container">
+          <h2 className="title">Ready to Get Started?</h2>
+          <div className="cta-buttons">
+            <a href="/contact" className="hero-button primary">Discuss Project</a>
+            <a href="#pricing" className="hero-button secondary">View Pricing</a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
