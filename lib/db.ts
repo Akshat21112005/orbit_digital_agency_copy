@@ -6,14 +6,13 @@ if (!MONGODB_URI) {
   throw new Error('Please define MONGODB_URI environment variable');
 }
 
-interface GlobalWithMongoose extends Global {
-  mongoose: {
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose: {
     conn: Connection | null;
     promise: Promise<Connection> | null;
-  };
+  } | undefined;
 }
-
-declare const global: GlobalWithMongoose;
 
 let cached = global.mongoose;
 
@@ -22,8 +21,12 @@ if (!cached) {
 }
 
 async function connectDB(): Promise<Connection> {
-  if (cached.conn) {
+  if (cached && cached.conn) {
     return cached.conn;
+  }
+
+  if (!cached) {
+    throw new Error('Mongoose cache not initialized');
   }
 
   if (!cached.promise) {
