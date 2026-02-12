@@ -2,10 +2,6 @@ import mongoose, { Connection } from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
-if (!MONGODB_URI) {
-  throw new Error('Please define MONGODB_URI environment variable');
-}
-
 declare global {
   // No eslint-disable needed
   var mongoose: {
@@ -21,6 +17,10 @@ if (!cached) {
 }
 
 async function connectDB(): Promise<Connection> {
+  if (!MONGODB_URI) {
+    throw new Error('Please define MONGODB_URI environment variable');
+  }
+
   if (cached && cached.conn) {
     return cached.conn;
   }
