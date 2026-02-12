@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 import { Inquiry as InquiryType } from '@/types';
 
-export interface IInquiry extends Document, InquiryType {}
+export interface IInquiry extends Document, Omit<InquiryType, '_id'> { }
 
 const inquirySchema = new Schema<IInquiry>(
   {
