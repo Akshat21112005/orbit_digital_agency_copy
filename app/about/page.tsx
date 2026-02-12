@@ -19,9 +19,9 @@ export default function AboutPage() {
             <div className="text-content">
               <h2 className="title">Our Story</h2>
               <p className="subtitle">
-                Founded in 2022, Orbit Digital started with a simple mission: to 
-                bridge the gap between beautiful design and powerful technology. 
-                Today, we serve 50+ clients worldwide, delivering solutions that 
+                Founded in 2022, Orbit Digital started with a simple mission: to
+                bridge the gap between beautiful design and powerful technology.
+                Today, we serve 50+ clients worldwide, delivering solutions that
                 scale with their ambitions.
               </p>
               <div className="stats-grid">
@@ -112,7 +112,7 @@ export default function AboutPage() {
       <section className="section cta-section">
         <div className="container">
           <h2 className="title">Ready to Work Together?</h2>
-          <p className="subtitle">Let's discuss your next project</p>
+          <p className="subtitle">Let&apos;s discuss your next project</p>
           <a href="/contact" className="hero-button primary">Start Project</a>
         </div>
       </section>

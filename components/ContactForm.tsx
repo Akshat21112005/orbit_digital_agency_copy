@@ -126,7 +126,7 @@ export default function ContactForm() {
       {submitStatus === 'success' && (
         <div className="flex items-center gap-2 p-4 bg-green-50 border border-green-200 text-green-700 rounded-lg">
           <Check size={20} />
-          <span className="font-medium">Success! We'll be in touch soon.</span>
+          <span className="font-medium">Success! We&apos;ll be in touch soon.</span>
         </div>
       )}
 

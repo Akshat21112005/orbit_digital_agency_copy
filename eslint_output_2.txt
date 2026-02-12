@@ -1,0 +1,6 @@
+
+C:\Users\Akshat Bhatt\OneDrive\Desktop\ERRORBITE-Orbitdigital\orbit-digital-agency\app\api\projects\route.ts
+  1:10  warning  'NextRequest' is defined but never used  @typescript-eslint/no-unused-vars
+
+??? 1 problem (0 errors, 1 warning)
+

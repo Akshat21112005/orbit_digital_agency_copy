@@ -17,7 +17,7 @@ export default function ContactSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Get In Touch</h2>
           <p className="text-xl text-slate-600">
-            Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Ready to start your next project? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </motion.div>
 

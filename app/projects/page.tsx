@@ -20,7 +20,7 @@ export default function ProjectsPage() {
             <div className="project-card">
               <h3>TechFlow Agency</h3>
               <p>
-                Complete rebrand and rebuild of a digital agency website. 
+                Complete rebrand and rebuild of a digital agency website.
                 Featuring advanced animations, CMS integration, and SEO optimization.
               </p>
               <div className="project-tags">
@@ -129,7 +129,7 @@ export default function ProjectsPage() {
       <section className="section cta-section">
         <div className="container">
           <h2 className="title">Your Project Here?</h2>
-          <p className="subtitle">Let's create something amazing together</p>
+          <p className="subtitle">Let&apos;s create something amazing together</p>
           <div className="cta-buttons">
             <a href="/contact" className="hero-button primary">Start Project</a>
             <a href="/services" className="hero-button secondary">Our Services</a>

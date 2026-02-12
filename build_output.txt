@@ -1,0 +1,13 @@
+
+> orbit-digital-agency@0.1.0 build
+> next build
+
+
+> Build error occurred
+Error: EPERM: operation not permitted, rmdir 'C:\Users\Akshat Bhatt\OneDrive\Desktop\ERRORBITE-Orbitdigital\orbit-digital-agency\.next\build\chunks'
+    at ignore-listed frames {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'rmdir',
+  path: 'C:\\Users\\Akshat Bhatt\\OneDrive\\Desktop\\ERRORBITE-Orbitdigital\\orbit-digital-agency\\.next\\build\\chunks'
+}
